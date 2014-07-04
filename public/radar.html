@@ -1,0 +1,46 @@
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">  
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/underscore.js"></script>
+<script type="text/javascript" src="lib/protovis-3.2/protovis-d3.2.js"></script>
+<script type="text/javascript" charset="utf-8" src="utils.js"></script>
+<script type="text/javascript" charset="utf-8" src="radars/radarData.js"></script>
+
+<style type="text/css" media="screen">
+  
+#fig {
+  height: 1000px;
+  width: 1200px;
+}
+
+</style>
+<script type="text/javascript" src="radar.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+
+</script>
+
+</head>
+
+<body onload="init(h,w);">
+<div>
+	<a href="#" id="newRadarItemLink" style="float: right">New Radar Item</a>
+</div>
+<div id="itemEditBox" visibility="none" style="background-color: lightgray; float: left; border: 1px solid">
+	<div>Editing Item: <span id="itemID" style="color: blue"></span></div>
+	<span>Name</span>
+	<input id="itemText" type="text"></input>
+	<span>Link</span>
+	<input id="itemLink" type="text"></input>
+	<span>Quadrant</span>
+	<select id="itemQuadrant"></select>
+	<button type="button" id="saveItem">Save</input>
+	<button type="button" id="deleteItem">Delete</input>
+	<button type="button" id="cancelEdit">Cancel</input>
+</div>
+<h1 id="title" style="text-align: center; clear: both;"></h1>
+<div id="radar"></div>
+</body>
+<script type="text/javascript" charset="utf-8" src="radarCRUD.js"></script>
+</html>
